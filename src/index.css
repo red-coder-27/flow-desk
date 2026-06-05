@@ -465,8 +465,14 @@ input[type="radio"] {
 }
 
 @media (max-width: 768px) {
+  .kanban-container {
+    flex-direction: column;
+    overflow-x: hidden;
+    scroll-snap-type: none;
+  }
   .kanban-column-wrapper {
-    min-width: 85vw;
+    min-width: 100%;
+    scroll-snap-align: none;
   }
 }
 
