@@ -8,6 +8,7 @@ export const TimerControls = ({ sessionType, setSessionType, isRunning, onStartP
       <div
         style={{
           display: 'flex',
+          flexWrap: 'wrap',
           gap: '8px',
           marginBottom: '24px',
           justifyContent: 'center',

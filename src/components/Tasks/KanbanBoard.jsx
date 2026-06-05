@@ -64,10 +64,13 @@ export const KanbanBoard = () => {
   return (
     <ErrorBoundary>
       <div
+        className="container"
         style={{
-          padding: '32px',
-          maxWidth: '100%',
+          paddingTop: 'var(--spacing-lg)',
           animation: 'fadeSlideUp 0.3s ease',
+          height: '100%',
+          display: 'flex',
+          flexDirection: 'column',
         }}
       >
         {/* Header */}
