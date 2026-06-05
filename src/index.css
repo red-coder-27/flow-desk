@@ -448,6 +448,28 @@ input[type="radio"] {
   }
 }
 
+.kanban-container {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.kanban-column-wrapper {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  flex: 1;
+  min-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .kanban-column-wrapper {
+    min-width: 85vw;
+  }
+}
+
 /* Utility Classes */
 .container {
   max-width: 1200px;

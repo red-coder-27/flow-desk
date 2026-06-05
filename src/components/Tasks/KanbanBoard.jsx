@@ -158,14 +158,7 @@ export const KanbanBoard = () => {
           onDragStart={handleDragStart}
           onDragEnd={handleDragEnd}
         >
-          <div
-            style={{
-              display: 'flex',
-              gap: '16px',
-              overflowX: 'auto',
-              paddingBottom: '20px',
-            }}
-          >
+          <div className="kanban-container">
             {['todo', 'inprogress', 'done'].map((column) => (
               <TaskColumn
                 key={column}

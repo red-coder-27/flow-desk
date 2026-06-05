@@ -17,12 +17,11 @@ export const TaskColumn = ({ column, tasks, onDelete, onAddClick }) => {
   return (
     <div
       ref={setNodeRef}
+      className="kanban-column-wrapper"
       style={{
         background: 'var(--bg-secondary)',
         borderRadius: 'var(--radius)',
         padding: '16px',
-        flex: 1,
-        minWidth: '300px',
         display: 'flex',
         flexDirection: 'column',
         maxHeight: 'calc(100vh - 250px)',
